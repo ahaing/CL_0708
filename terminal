@@ -1,0 +1,44 @@
+@ahaing ➜ /workspaces/CL_0708 (main) $ git pull -f
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+@ahaing ➜ /workspaces/CL_0708 (main) $ git config pull.rebase febase
+@ahaing ➜ /workspaces/CL_0708 (main) $ git pull
+fatal: invalid value for 'pull.rebase': 'febase'
+@ahaing ➜ /workspaces/CL_0708 (main) $ git config pull.rebase false
+@ahaing ➜ /workspaces/CL_0708 (main) $ git pull
+Auto-merging Lesson0708_001.ipynb
+CONFLICT (add/add): Merge conflict in Lesson0708_001.ipynb
+Automatic merge failed; fix conflicts and then commit the result.
+@ahaing ➜ /workspaces/CL_0708 (main) $ git pull -f
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+@ahaing ➜ /workspaces/CL_0708 (main) $ git add .
+@ahaing ➜ /workspaces/CL_0708 (main) $ git merge
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+@ahaing ➜ /workspaces/CL_0708 (main) $ git commit -m "modify"
+[main e121fbe] modify
+@ahaing ➜ /workspaces/CL_0708 (main) $ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1013 bytes | 1013.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/ahaing/CL_0708
+   8942061..e121fbe  main -> main
+@ahaing ➜ /workspaces/CL_0708 (main) $ 
