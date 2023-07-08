@@ -3,4 +3,4 @@ import random
 min = 2 #建立一個猜數字1~100
 max = 100
 target = random.randint(min, max)
-print(target) #要手動進入terminal (ctrl)
+print(target) #要手動進入terminal (ctrl + shift + p)
