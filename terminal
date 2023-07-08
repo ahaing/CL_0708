@@ -1,3 +1,4 @@
+#如果VS CODE的COMMENT報錯用Terminal分開pull & push
 @ahaing ➜ /workspaces/CL_0708 (main) $ git pull -f
 hint: You have divergent branches and need to specify how to reconcile them.
 hint: You can do so by running one of the following commands sometime before
