@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "newPy",
+			"path": "../newPy"
+		},
+		{
+			"name": ".devcontainer",
+			"path": "../__112_python_flask__/.devcontainer"
+		}
+	],
+	"settings": {}
+}
