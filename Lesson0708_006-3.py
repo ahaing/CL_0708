@@ -1,11 +1,15 @@
 #!/usr/bin/python3.10.2 (告訴別人這個檔案給哪一版本的python)
 import random
-min = 1 #建立一個猜數字1~100
-max = 10
-count = 0
-target = random.randint(min, max)
-# print(target) #要手動進入terminal (ctrl + shift + p)
-print(f"猜數字遊戲{min}~{max}\n\n")
+
+def playGame():
+
+#要手動進入terminal (ctrl + shift + p)
+    min = 1 #建立一個猜數字1~100
+    max = 10
+    count = 0
+    target = random.randint(min, max)
+    print(target) 
+    print(f"猜數字遊戲{min}~{max}\n\n")
 
     while True:
         keyin = int(input(f"猜數字遊戲{min}~{max}:  "))
@@ -13,12 +17,7 @@ print(f"猜數字遊戲{min}~{max}\n\n")
         if (keyin == target):
             print(f" ~ Congrats!!! The number is {target} ~ BINGO!! ~ ")
             print(f"== 猜了共{count}次 ==")
-            
-            againNY = input(f"\n請問是否還要繼續玩一次嗎?(Y/N)\n")
-            if (N == againNY):
-                break
-            else
-                
+            break
         #
         elif keyin > target:
             print("smaller")
@@ -30,9 +29,11 @@ print(f"猜數字遊戲{min}~{max}\n\n")
         #
         #else:
         #    print("Sorry You're wrong")
-            print(f"猜錯第{count}次\n")
-    print("\n這局結束\n")
-    
+            print(f"猜錯第{count}次\n")    
 
-    
-    
+while(True):
+    playGame()
+    play_again = input ("\nstart again? (Y/N)\n")
+    if (not play_again == 'Y'):
+        break
+print("\n==Game Over==\n")
