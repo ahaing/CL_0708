@@ -9,7 +9,7 @@ def playGame():
     count = 0
     target = random.randint(min, max)
     print(target) 
-    print(f"猜數字遊戲{min}~{max}\n\n")
+    #print(f"猜數字遊戲{min}~{max}\n\n")
 
     while True:
         keyin = int(input(f"猜數字遊戲{min}~{max}:  "))
@@ -29,11 +29,11 @@ def playGame():
         #
         #else:
         #    print("Sorry You're wrong")
-            print(f"猜錯第{count}次\n")    
+        print(f"@@猜錯第{count}次\n")    
 
 while(True):
     playGame()
     play_again = input ("\nstart again? (Y/N)\n")
     if (not play_again == 'Y'):
         break
-print("\n==Game Over==\n")
+print("==Game Over==\n")
